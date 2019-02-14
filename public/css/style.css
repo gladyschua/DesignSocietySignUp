@@ -14,9 +14,10 @@ height: 100%;
 width: 100%;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) {
   html,body {
       background: url(../images/bg_dsuq_desktop.jpg) center top no-repeat;
+      max-width: 1000px;
   }
 }
 
