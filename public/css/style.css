@@ -21,6 +21,12 @@ width: 100%;
   }
 }
 
+.logo {
+    background: url(../images/bg_dsuq_desktop.jpg) center top no-repeat;
+    width: 100px;
+
+}
+
 
 #wrapper{
 max-width: 100%;
