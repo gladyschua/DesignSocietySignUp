@@ -34,21 +34,21 @@ router.post('/invite', function(req, res) {
           if (body.ok) {
             res.render('result', {
               community: config.community,
-              message: 'Success! Check &ldquo;'+ req.body.email +'&rdquo; for an invite from Slack.'
+              message: 'Welcome! Check &ldquo;'+ req.body.email +'&rdquo; for an invite from Slack.'
             });
           } else {
             let error = body.error;
             if (error === 'already_invited' || error === 'already_in_team') {
               res.render('result', {
                 community: config.community,
-                message: 'Success! You were already invited.<br>' +
+                message: 'Ummmm! You were already invited.<br>' +
                         'Visit <a href="https://'+ config.slackUrl +'">'+ config.community +'</a>'
               });
               return;
             } else if (error === 'invalid_email') {
               error = 'The email you entered is an invalid email.';
             } else if (error === 'invalid_auth') {
-              error = 'Something has gone wrong. Please contact a system administrator.';
+              error = 'Something has gone wrong. Contact designsocietyuq@gmail.com.';
             }
 
             res.render('result', {

@@ -10,6 +10,6 @@ html
     #wrapper
       .main
         .header
-          h1
-            strong #{community}
+            .logo
+                img.image(src="/images/logo.png")
           h2(class=isFailed?'error':'') !{message}
