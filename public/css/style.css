@@ -7,25 +7,20 @@ html,body{
 margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
-background: url('bg_mobile.jpg');
-
-background-size: cover;
-height: 100%;
-width: 100%;
+background: #684b9e;
 }
 
-@media only screen and (min-width: 600px) {
-  html,body {
-      background: url(../images/bg_dsuq_desktop.jpg) center top no-repeat;
-      max-width: 1000px;
-  }
-}
 
 .logo {
-    background: url(../images/bg_dsuq_desktop.jpg) center top no-repeat;
+    background: url(../images/logo.png) center top no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+.ulogo {
+        background: url(../images/uq-logo-white.png) center top no-repeat;
     width: 100px;
     height: 100px;
-
 }
 
 
