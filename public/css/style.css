@@ -11,32 +11,20 @@ background: #684b9e;
 }
 
 
-#logo {
-max-width: 100%;
-width: 940px;
-margin: 0 auto;
+.logo {
+width: 200px;
+height: 200px;    
+}
+
+.logo img {
+    height:100%
+    width:auto;
 }
 
 #ulogo {
 max-width: 100%;
 width: 940px;
 margin: 0 auto;
-
-}
-
-.logoimg {
-    background: url(../images/logo.png) center top no-repeat;
-max-width: 100%;
-width: 940px;
-float: left;
-
-}
-
-.uqimg {
-    background: url(../images/uq-logo-white.png) center top no-repeat;
-max-width: 100%;
-width: 940px;
-float: left;
 
 }
 
