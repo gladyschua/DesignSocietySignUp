@@ -11,6 +11,7 @@ html
       .main
         .header
           .logo
+            .logoimg
           h2 #{__('HEADER', community)}
         .content
           .information
@@ -22,6 +23,7 @@ html
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey=recaptchaSiteKey)
         .uqlogo
+            .uqimg
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
     script.
