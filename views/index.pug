@@ -12,14 +12,14 @@ html
         .header
             .logo
                 img.image(src="/images/logo.png")
-
+            h2 #{__('HEADER', community)}
         .content
           .information
             form(method="POST", action="invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder=__('ENTER_EMAIL'))#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder=__('ENTER_TOKEN'))#slack-token.field
-              input(type="submit", value="Join Us").submit
+              input(type="submit", value="Send Slack Invite").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey=recaptchaSiteKey)
 
@@ -42,4 +42,4 @@ html
           evt.preventDefault();
         }
       });
-            h2 #{__('HEADER', community)}
+
