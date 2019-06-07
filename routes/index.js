@@ -41,14 +41,14 @@ router.post('/invite', function(req, res) {
             if (error === 'already_invited' || error === 'already_in_team') {
               res.render('result', {
                 community: config.community,
-                message: 'Ummmm! You were already invited.<br>' +
+                message: 'Hi there! It seems like this email address has already been sent an invite link.<br>' +
                         'Visit <a href="https://'+ config.slackUrl +'">'+ config.community +'</a>'
               });
               return;
             } else if (error === 'invalid_email') {
               error = 'The email you entered is an invalid email.';
             } else if (error === 'invalid_auth') {
-              error = 'Something has gone wrong. Contact designsocietyuq@gmail.com.';
+              error = 'Something has gone wrong. Contact g.chua@uq.edu.au';
             }
 
             res.render('result', {
